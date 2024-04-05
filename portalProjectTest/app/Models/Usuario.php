@@ -11,4 +11,15 @@ class Usuario extends Model
     use HasFactory;
     protected $table = 'usuarios';
     protected $fillable = ['nome', 'email', 'cpf'];
+
+    public function saveUser($nome, $cpf, $email)
+    {
+        Usuario::created([
+            'nome' => $nome,
+            'email' => $email,
+            'cpf' => $cpf,
+            'created_at' => null,
+            'updated_at' => null
+        ]);
+    }
 }
