@@ -7,3 +7,7 @@ Route::get('/', function () {
 });
 
 Route::get('/usuarios', [UsuariosController::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
