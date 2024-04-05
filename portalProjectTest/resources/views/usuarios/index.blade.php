@@ -16,6 +16,7 @@
                                 <tr>
                                     <th>Nomes</th>
                                     <th>Email</th>
+                                    <th>Cpf</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -23,6 +24,7 @@
                                     <tr>
                                         <td>{{ $usuario['nome'] }}</td>
                                         <td>{{ $usuario['email'] }}</td>
+                                        <td>{{ $usuario['cpf'] }}</td>
                                     </tr>
                                 @endforeach
                                 </tbody>
