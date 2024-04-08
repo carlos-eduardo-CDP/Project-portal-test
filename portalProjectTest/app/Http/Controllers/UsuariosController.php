@@ -29,4 +29,9 @@ class UsuariosController extends Controller
 
         return redirect()->route('usuarios.index');
     }
+
+    public function deleteUser(Request $request)
+    {
+        Usuario::deleted($request['id']);
+    }
 }

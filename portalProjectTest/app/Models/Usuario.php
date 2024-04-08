@@ -22,4 +22,6 @@ class Usuario extends Model
             'updated_at' => null
         ]);
     }
+
+
 }
